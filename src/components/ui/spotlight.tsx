@@ -118,7 +118,7 @@ const Spotlight = React.forwardRef<HTMLElement, HeroProps>(
           </div>
 
           {/* The Text Content Layer */}
-          <motion.div
+          {/* <motion.div
             initial={{ y: 100, opacity: 0 }}
             viewport={{ once: true }}
             transition={{ ease: [0.215, 0.61, 0.355, 1], delay: 3, duration: 2 }}
@@ -146,12 +146,10 @@ const Spotlight = React.forwardRef<HTMLElement, HeroProps>(
                 </p>
               )}
 
-              {/* Optional: Add a pointer-events-auto button if you need one to be clickable */}
               <div className="pointer-events-auto mt-4">
-                {/* Your Button Here */}
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </section>
     )

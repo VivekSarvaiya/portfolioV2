@@ -18,7 +18,7 @@ const skills = [
     category: "Frontend",
     icon: "⚛️",
     desc: "Building modern, responsive user interfaces with React ecosystem and cutting-edge build tools",
-    tech: ["React", "Next.js", "Vite", "Tailwind CSS"]
+    tech: ["React", "Next.js", "Vite", "Tailwind CSS", "Motion", "Framer"]
   },
   {
     id: 3,
@@ -66,7 +66,7 @@ const skills = [
     category: "Tools",
     icon: "🛠️",
     desc: "Leveraging AI-powered development tools and testing platforms for efficient workflows",
-    tech: ["Postman", "Cursor", "Windsurf", "ChatGPT", "Claude", "Figma"]
+    tech: ["Git", "GitHub", "NPM", "Postman", "Cursor", "Windsurf", "ChatGPT", "Claude", "Figma"]
   },
   {
     id: 9,
@@ -120,34 +120,6 @@ export function SkillsGraph() {
           <p className="font-mono text-muted-foreground max-w-2xl text-lg">
             Full-stack development with modern technologies, AI-powered workflows, and cloud infrastructure
           </p>
-        </motion.div>
-
-        {/* Tech Stack Badges */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.8, duration: 0.6 }}
-          className="my-16 flex flex-wrap items-center justify-center gap-4"
-        >
-          <div className="flex flex-wrap items-center gap-3 px-6 py-3 border border-white/10 bg-white/5 rounded-full backdrop-blur-sm">
-            <span className="font-mono text-xs text-muted-foreground uppercase tracking-widest">Primary Stack:</span>
-            <div className="flex flex-wrap items-center gap-2">
-              {["Mern Stack", "Next.js", "Tailwind CSS", "TypeScript", "Nest.js"].map((tech, index) => (
-                <motion.span
-                  key={tech}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.9 + index * 0.1 }}
-                  className="font-mono text-sm text-white/80 font-semibold"
-                >
-                  {tech}
-                  {index < 4 && <span className="text-white/30 mx-2">•</span>}
-                </motion.span>
-              ))}
-            </div>
-          </div>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

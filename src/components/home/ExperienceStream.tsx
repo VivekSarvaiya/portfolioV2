@@ -4,22 +4,22 @@ import { motion } from "framer-motion";
 
 const experience = [
   {
-    year: "2023 - Present",
-    role: "Staff Engineer",
-    company: "TechCorp",
-    impact: "Led migration of monolith to micro-frontends. Reduced build times by 60%."
+    year: "May 2024 - Present",
+    role: "MERN Stack Developer",
+    company: "Pixerfect Solutions LLP · Surat, GJ",
+    impact: "Built and scaled production-ready web applications by owning frontend architecture, API integrations, and performance optimization — cutting release cycles by 25% and improving real-world user experience."
   },
   {
-    year: "2020 - 2023",
-    role: "Senior Developer",
-    company: "StartUp Inc",
-    impact: "Scaled payment infrastructure from $1M to $50M ARR processing."
+    year: "July 2022 - May 2024",
+    role: "Frontend Developer",
+    company: "DayDreamSoft LLP · Surat, GJ",
+    impact: "Delivered high-performance, modular React applications by collaborating across teams and optimizing rendering, resulting in faster load times and a more maintainable codebase."
   },
   {
-    year: "2018 - 2020",
-    role: "Software Engineer",
-    company: "Agency",
-    impact: "Delivered 15+ production apps for Fortune 500 clients."
+    year: "Jan 2022 – June 2022",
+    role: "Frontend Developer Intern",
+    company: "DayDreamSoft LLP · Surat, GJ",
+    impact: "Contributed to live client projects by shipping responsive UI components and learning production-grade development workflows under senior mentorship."
   }
 ];
 

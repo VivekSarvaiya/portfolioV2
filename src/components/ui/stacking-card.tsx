@@ -49,11 +49,11 @@ export const Card = ({
           backgroundColor: "#000",
           border: `1px solid #282C35`,
           scale,
-          top: `calc(10vh + ${i * 25}px)`,
+          top: `calc(5vh + ${i * 25}px)`,
         }}
-        className={`flex flex-col relative -top-[25%] sm:h-[450px] w-full 2xl:w-[75%] rounded-md p-10 origin-top`}
+        className={`flex flex-col relative -top-[25%] h-96 sm:h-[450px] w-full 2xl:w-[75%] rounded-md p-8 sm:p-10 origin-top`}
       >
-        <div className={`flex h-full mt-5 gap-10`}>
+        <div className={`flex h-full gap-10`}>
           <div className={`sm:w-[40%] relative top-[10%]`}>
             <h2 className='text-2xl font-semibold font-display mb-2'>{title}</h2>
             <p className='font-display'>{description}</p>
@@ -90,7 +90,7 @@ const Component = forwardRef<HTMLElement, ComponentRootProps>(({ projects }, ref
       <main ref={container}>
         <section className='text-white w-full relative'>
 
-          <div className="max-w-7xl mx-auto z-10 sticky top-24">
+          <div className="max-w-7xl mx-auto z-10 sticky top-24 sm:mb-28">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -107,7 +107,7 @@ const Component = forwardRef<HTMLElement, ComponentRootProps>(({ projects }, ref
               >
                 // Services
               </motion.h2>
-              <h2 className="text-4xl md:text-6xl font-display font-bold mb-6 bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent">
+              <h2 className="text-4xl md:text-6xl font-display font-bold mb-6 text-white hidden sm:block">
                 End-to-End Web Development Services
               </h2>
             </motion.div>
